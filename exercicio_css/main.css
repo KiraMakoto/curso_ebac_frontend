@@ -60,19 +60,19 @@ section h2,
     margin-bottom: 16px;
 }
 
-.articles area h3{
-    margin-top: 8px;
-    margin-bottom: 8px;
-}
-
 .articles article a {
-    background-color: rgb(17, 0, 255);
+    background-color: rgba(0,255,0,0.1);
     color: #fff;
     padding: 8px;
     display: inline-block;
     text-decoration: none;
     font-weight: 700;
     margin-top: 8px;
+}
+
+.articles area h3{
+    margin-top: 8px;
+    margin-bottom: 8px;
 }
 
 .articles article a:hover{
@@ -109,5 +109,17 @@ section h2 {
 }
 
 #sience_tecnology{
-    
+    background-color: rgba(0,0,255,0.1);
+}
+
+#sience_tecnology .articles article a{
+    background-color: rgba(102, 102, 219, 0.8);
+}
+
+#culture_art{
+    background-color: rgba(245, 218, 231, 0.945);
+}
+
+#culture_art .articles article a{
+    background-color: rgb(240, 145, 191);
 }
