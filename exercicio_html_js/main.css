@@ -1,0 +1,43 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 30px;
+}
+
+h1{
+    margin-left: 20%;
+}
+
+input, textarea, button{
+    margin: 0 auto;
+    display: block;
+    padding: 8px;
+    margin-bottom: 8px;
+    width: 50%;
+    resize: none;
+}
+
+button{
+    background-color: aquamarine;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.mensagem-sucesso {
+    background-color: rgb(105, 241, 105);
+    padding: 8px;
+    width: 50%;
+    margin: 0 auto;
+    display: none;
+}
+
+.mensagemErro{
+    background-color: rgb(241, 106, 65);
+    padding: 8px;
+    width: 50%;
+    margin: 0 auto;
+    margin-bottom: 8px;
+    font-size: 12px;
+    display: none;
+}
