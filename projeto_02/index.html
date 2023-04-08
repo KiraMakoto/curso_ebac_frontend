@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista telefonica</title>
+    <link rel="stylesheet" href="./main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Mochiy+Pop+One&family=Poppins:wght@400;500;600&family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="./img/icone_trap_agenda.png" alt="icone de lista de contatos" >
+            <h1>Sua lista de contatos</h1>
+        </header>
+        <form id="list_telefone">
+            <input type="text" required placeholder="nome" id="nome">
+            <input type="tel" required placeholder="Telefone" id="telefone">
+            <button> Adicionar +</button>
+        </form>
+        <table cellspacing=0>
+            <thead>
+                <tr>
+                    <th>Foto</th>
+                    <th>Nome</th>
+                    <th>Número de contato</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+        
+    </div>
+    <script src="./main.js"></script>
+</body>
+</html>
