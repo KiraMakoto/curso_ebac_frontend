@@ -5,63 +5,46 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>calcula média</title>
+    <link rel="stylesheet" href="./main.css">
 </head>
 <body>
-    <header>
-        <img src="./img/logo.png" alt="capelo e diploma">
-        <h1>Calculadora de médias</h1>
-    </header>
-    <form action="">
-        <input type="text" required placeholder="Nome da atividade">
-        <input type="number"  required placeholder="Nota" min="0" max="10">
-        <button>Adicionar +</button>
-    </form>
-    <table>
-        <thead>
-            <th>
-                Nome da atividade
-            </th>
-            <th>
-                Nota 
-            </th>
-            <th>
-                Aprovado?
-            </th>
-        </thead>
-        <tbody>
-            <tr>
-                <td>
-                Atividade A
-                </td>
-                <td>
-                    7
-                </td>
-                <td><img src="./img/aprovado.png" alt="emoji comemorando"></td>
-            </tr>
-            <tr>
-                <td>
-                    Atividade B
-                </td>
-                <td>
-                    4
-                </td>
-                <td>
-                    <img src="./img/reprovado.png" alt="emoji triste">
-                </td>
-            </tr>
-        </tbody>
-        <tfoot>
-            <td>
-                Nota média
-            </td>
-            <td>
-                11
-            </td>
-            <td>
-                Reprovado
-            </td>
-        </tfoot>
-    </table>
-    
+    <div class="container">
+        <header>
+            <img src="./img/logo.png" alt="capelo e diploma">
+            <h1>Calculadora de médias</h1>
+        </header>
+        <form id="form-atividade">
+            <input type="text" id="nomeAtividade" required placeholder="Nome da atividade">
+            <input type="number" id="notaAtividade" required placeholder="Nota" min="0" max="10">
+            <button>Adicionar +</button>
+        </form>
+        <table cellspacing="0">
+            <thead>
+                <th>
+                    Nome da atividade
+                </th>
+                <th>
+                    Nota da atividade
+                </th>
+                <th>
+                    Aprovado?
+                </th>
+            </thead>
+            <tbody>
+                
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td>
+                        Nota média
+                    </td>
+                    <td id="media-final-valor">---
+                    </td>
+                    <td id = "media-final-resultado">---</td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+    <script src="./main.js"></script>
 </body>
 </html>
