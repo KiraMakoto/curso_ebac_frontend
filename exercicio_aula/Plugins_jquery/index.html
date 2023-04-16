@@ -239,6 +239,7 @@
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="./js/jquery.mask.min.js"></script>
+    <script src="./js/jquery.validate.min.js"></script>
 
     <script>
         $(document).ready(function(){
@@ -246,7 +247,26 @@
             $('.menu-hamburguer').click(function(){
                 $('nav').slideToggle();
             })
-            $('#Telefone').mask('(00) 00000-0000')    
+            $('#Telefone').mask('(00) 00000-0000')  
+            
+            $('form').validate({
+                rules:{
+                    nome: {
+                    required: true
+                },
+                email: {
+                    required: true,
+                    email: true
+                },
+                telefone: {
+                    required: true
+                },
+                mensagem:{
+                    required: true
+                }
+                }
+            }
+            )
         })
     </script>
 </body>
