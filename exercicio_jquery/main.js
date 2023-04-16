@@ -13,9 +13,9 @@ $(document).ready(function() {
 
         console.log(novoItem)
         
-        $('ul').on('click', 'li', function(){
+        $('li').on('click', function(){
 
-            $('li').last().addClass('finalizado')
+            $(this).addClass('finalizado')
 
         }) 
             
