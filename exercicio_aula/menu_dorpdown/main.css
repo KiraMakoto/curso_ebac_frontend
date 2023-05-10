@@ -186,9 +186,3 @@ aside .noticia{
         grid-template-columns: repeat(2, 49%);
     }
 }
-
-@media screen and (min-width: 1024px) {
-    .botão-menu{
-        display: none;
-    }
-}
