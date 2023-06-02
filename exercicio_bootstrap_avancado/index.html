@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skate Shop</title>
+    <link rel="stylesheet" href="./lib/bootstrap.min.css">
+    <style>
+        section{
+            height: 200vh;
+            background-color: #ccc;
+            padding-top: 100px;
+        }
+
+        h1{
+            text-align: center;
+            background-color: #e0e0e0;
+        }
+        
+        #botao-menu{
+            position: sticky;
+            top: 0;
+            left: 0;
+            background-color: #fff;
+        }
+    </style>
+
+</head>
+<body>
+        <div id="carousel-movimento" class="carousel carousel-fade slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div data-bs-interval="3000" class="carousel-item active">
+                    <img class="d-block w-100" src="./imagens/devin-avery-7GWQJ0yYRhM-unsplash.jpg" alt="manobra de skate">
+                </div>
+                <div data-bs-interval="3000" class="carousel-item">
+                    <img class="d-block w-100" src="./imagens/lukas-bato-Vbbn4xNBfnM-unsplash.jpg" alt="">
+                </div>
+                <div data-bs-interval="3000" class="carousel-item">
+                    <img class="d-block w-100" src="./imagens/oleg-ivanov-XkwWp8Twxxo-unsplash.jpg" alt="">
+                </div>
+                <div data-bs-interval="3000" class="carousel-item">
+                    <img class="d-block w-100" src="./imagens/shawn-henry-eK_aInAXydw-unsplash.jpg" alt="">
+                </div>
+            </div>
+            <button data-bs-target="#carousel-movimento" data-bs-slide="prev" class="carousel-control-prev" type="button">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button data-bs-target="#carousel-movimento" data-bs-slide="next" class="carousel-control-next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carousel-movimento" data-bs-slide-to="0" class="active"></button>
+                <button type="button" data-bs-target="#carousel-movimento" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#carousel-movimento" data-bs-slide-to="2"></button>
+                <button type="button" data-bs-target="#carousel-movimento" data-bs-slide-to="3"></button>
+            </div>
+        </div>
+        <header id="cabecalho">
+            <div class="navbar">
+                <h2>Skate Shop</h2>
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu" id="botao-menu">
+                    <samp class="navbar-toggler-icon"></samp>
+                </button>
+                <nav class="collapse navbar-collapse" id="menu">
+                    <ul class="nav nav-pills">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#sobre-skate">sobre skate</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#skates-noticias">skates montados</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>  
+    <div data-bs-spy="scroll" data-bs-target="#cabecalho">
+        <section id="sobre-skate">
+            <h2>Sobre skate</h2>
+            <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minus quia nam rem. Temporibus tempora delectus esse quaerat ipsa distinctio, voluptatum accusamus eaque consectetur fugiat architecto minima nisi excepturi aliquid inventore.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa quia hic eos, aspernatur minima animi dicta rerum. Officia, repellendus? Quae harum minima quas ad beatae dolorem quibusdam et eaque. Unde?
+            </p>
+            <img src="" alt="">
+        </section>
+        <section id="skates-noticias">
+            <h2>notícias do mundo de skate</h2>
+            <div class="container">
+                <nav class="nav nav-tabs">
+                    <button data-bs-toggle="tab" data-bs-target="#aba1"  class="nav-link active" type="button">noticias da semana</button>
+                    <button data-bs-toggle="tab" data-bs-target="#aba2" class="nav-link" type="button">Campeonatos</button>
+                </nav>
+                <div class="tab-content" >
+                    <div class="tab-pane active" id="aba1">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-sm-12 col-md-6 col-lg-3">
+                                    <div class="card">
+                                        <div class="card-header">
+                                            marca do skate
+                                        </div>
+                                        <img src="https://via.placeholder.com/100x100" alt="foto do proguto">
+                                        <div class="card-body">
+                                            <h4 class="card-title">modelo do skate</h4>
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est minus deleniti repellat, voluptatibus cumque possimus eligendi sint ex. Qui itaque modi fuga saepe. Nam temporibus accusantium cumque numquam, enim distinctio!</p>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-12 col-md-6 col-lg-3">
+                                    <div class="card">
+                                        <div class="card-header">
+                                            conseguir patrocinio
+                                        </div>
+                                        <img src="https://via.placeholder.com/100x100" alt="foto do proguto">
+                                        <div class="card-body">
+                                            <h4 class="card-title">consiga patrocinio</h4>
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est minus deleniti repellat, voluptatibus cumque possimus eligendi sint ex. Qui itaque modi fuga saepe. Nam temporibus accusantium cumque numquam, enim distinctio!</p>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-12 col-md-6 col-lg-3">
+                                    <div class="card">
+                                        <div class="card-header">
+                                            novo modelo de shape
+                                        </div>
+                                        <img src="https://via.placeholder.com/100x100" alt="foto do proguto">
+                                        <div class="card-body">
+                                            <h4 class="card-title"> novo modelo de shape</h4>
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est minus deleniti repellat, voluptatibus cumque possimus eligendi sint ex. Qui itaque modi fuga saepe. Nam temporibus accusantium cumque numquam, enim distinctio!</p>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane" id="aba2">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-sm-12 col-md-6 col-lg-3">
+                                    <div class="card">
+                                        <div class="card-header">
+                                            STU
+                                        </div>
+                                        <img src="https://via.placeholder.com/100x100" alt="foto do proguto">
+                                        <div class="card-body">
+                                            <h4 class="card-title">STU 2023</h4>
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est minus deleniti repellat, voluptatibus cumque possimus eligendi sint ex. Qui itaque modi fuga saepe. Nam temporibus accusantium cumque numquam, enim distinctio!</p>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-12 col-md-6 col-lg-3">
+                                    <div class="card">
+                                        <div class="card-header">
+                                            SLS 2023
+                                        </div>
+                                        <img src="https://via.placeholder.com/100x100" alt="foto do proguto">
+                                        <div class="card-body">
+                                            <h4 class="card-title">SLS 2023</h4>
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est minus deleniti repellat, voluptatibus cumque possimus eligendi sint ex. Qui itaque modi fuga saepe. Nam temporibus accusantium cumque numquam, enim distinctio!</p>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-12 col-md-6 col-lg-3">
+                                    <div class="card">
+                                        <div class="card-header">
+                                            Tampa 
+                                        </div>
+                                        <img src="https://via.placeholder.com/100x100" alt="foto do proguto">
+                                        <div class="card-body">
+                                            <h4 class="card-title">Tampa 2023</h4>
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est minus deleniti repellat, voluptatibus cumque possimus eligendi sint ex. Qui itaque modi fuga saepe. Nam temporibus accusantium cumque numquam, enim distinctio!</p>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </div>
+    <script src="./lib/bootstrap.bundle.min.js"></script>
+</body>
+</html>
